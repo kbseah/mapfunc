@@ -92,7 +92,7 @@ foreach my $lib (sort {$a cmp $b} keys %lib_daa_hash) {
         }
         if (! -f $outpathfull && $getfull) {
             gethits ($curr_out6,$curr_target,$outpathfull,"full");
-        } else {
+        } elsif (-f $outpathfull && $getfull) {
             print STDERR "FIle $outpathfull already exists, skipping \n";
         }
     }
