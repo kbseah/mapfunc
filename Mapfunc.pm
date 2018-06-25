@@ -6,7 +6,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 
 $VERSION = 1.00;
 @ISA = qw (Exporter);
-@EXPORT = qw(hashTSV_KV hashTSV_KKV doSystem previewCmd);
+@EXPORT = qw(hashTSV hashTSV_KV hashTSV_KKV doSystem previewCmd);
 @EXPORT_OK = qw ();
 %EXPORT_TAGS = (DEFAULT => [qw(hashTSV_KV hashTSV_KKV doSystem previewCmd)]);
 

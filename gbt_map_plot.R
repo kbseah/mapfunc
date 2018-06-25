@@ -44,7 +44,7 @@ for (i in dim(maps)[1]:1) { # Reverse sort
            y=tmpbin2$Avg_fold,
            pch=21,
            cex=sqrt(tmpbin2$Length)/100,
-           col=blackred(max(tmpbin2$Maps))[tmpbin2$Maps])
+           col=blackred(max(tmpbin2$Maps)+1)[tmpbin2$Maps+1]) # Color scaled by mapping hits. Plus 1 because any zero values will mess up the color vector
     # Display text label only if more than 10 reads mapping
     tmpbin3 <- subset(tmpbin2,Maps > 10)
     # Render text label

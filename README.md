@@ -1,9 +1,3 @@
-# TO DO
-
- * For coverage plots with overlay - remove SSU marker (distracting) and add text label of counts beside each contig with hits (do not show for counts < 5)
- * Boxplots of hits per protein of interest, but with values first standardized to library size and average protein length
- * Add two or three more metabolic genes that are expected to be present, as well as non-metabolic genes (e.g. RecA?)
-
 # mapfunc workflow
 
 The `mapfunc` pipeline uses the Diamond read mapper to search for protein-coding genes in metagenomic read libraries, by mapping against the Uniprot database. The aim is to look for genes of interest that may have been misassembled or mispredicted by gene-callers.
@@ -108,3 +102,10 @@ perl mapfunc_tabplot.pl --covstats covstats_list \
  * `gzip`
  * `tsp` (for scheduling jobs)
  * `R`,`Rscript`, and R package `gbtools` - for plots
+
+## TO DO
+
+ * For coverage plots with overlay - remove SSU marker (distracting) and add text label of counts beside each contig with hits (do not show for counts < 5)
+ * Boxplots of hits per protein of interest, but with values first standardized to library size and average protein length
+ * Add two or three more metabolic genes that are expected to be present, as well as non-metabolic genes (e.g. RecA?)
+
