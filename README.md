@@ -16,10 +16,10 @@ Run `diamond blastx` on sensitive mode. Example command:
 
 ```bash
 diamond blastx -v \
-               -d /opt/extern/bremen/symbiosis/seah/mapall/uniprot_sprot_2017_01 \
-               -q 1418_A_*R1*.fastq.gz \
+               -d /path/to/database/uniprot_sprot_2017_01 \
+               -q reads_*.fastq.gz \
                -p 24 \
-               -o 1418A_v_uniprot_sprot.diamond.blastx.daa \
+               -o hits.diamond.blastx.daa \
                -f 100 \
                --sensitive \
                --max-target-seqs 1 \
@@ -102,10 +102,3 @@ perl mapfunc_tabplot.pl --covstats covstats_list \
  * `gzip`
  * `tsp` (for scheduling jobs)
  * `R`,`Rscript`, and R package `gbtools` - for plots
-
-## TO DO
-
- * For coverage plots with overlay - remove SSU marker (distracting) and add text label of counts beside each contig with hits (do not show for counts < 5)
- * Boxplots of hits per protein of interest, but with values first standardized to library size and average protein length
- * Add two or three more metabolic genes that are expected to be present, as well as non-metabolic genes (e.g. RecA?)
-
